@@ -3,23 +3,23 @@
 #include <string>
 
 int main(){
-  std::count <<"Please enter your first name: ";
+  std::cout <<"Please enter your first name: ";
   std:: string name;
   std::cin >> name;
 
   const std:: string greeting = "Hello, " + name + "!";
 
-  const std:: string space(greeting.size(), ' ');
+  const std:: string spaces(greeting.size(), ' ');
   const std:: string second ="* " + spaces +" *";
 
   const std:: string first(second.size(),'*');
 
-  std::count <<std::end1;
-  std::count <<first << std::endl;
-  std::count <<secound << std::endl;
-  std::count <<"* " <<greeting << " *" << std::endl;
-  std::count <<secound << std::endl;
-  std::count <<first << std::endl;
-  
+  std::cout <<std::endl;
+  std::cout <<first << std::endl;
+  std::cout <<second << std::endl;
+  std::cout <<"* " <<greeting << " *" << std::endl;
+  std::cout <<second << std::endl;
+  std::cout <<first << std::endl;
+
   return 0;
 }
