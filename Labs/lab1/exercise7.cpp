@@ -3,19 +3,19 @@
 
 int main()
 {
-  for(int i = 1; i<100;i++)
+  int product = 1;
+  for(int i = 1; i<9;i++)
   {
-    if(i%2==0)
-    {
-      for(int x = 1; x<=9; x++)
-      {
-        std::cout << i*x;
-        std::cout << " ";
-      }
-
-      std::cout << " \n";
-    }
+	if(i%2==0)
+	{
+		product = product*i;
+		std::cout << i;
+		std::cout << " \n";
+	}
+    	
   }
+  std::cout << product;
+  std::cout << " \n";
 
   return 0;
 }
